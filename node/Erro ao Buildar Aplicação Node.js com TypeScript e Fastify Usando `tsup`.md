@@ -59,7 +59,7 @@ Error: Build failed with 4 errors:
 
 1. Arquivos `.html`: O `tsup` não possui um loader configurado para processar arquivos `.html` encontrados em algumas dependências, como `bcrypt`.
 
-2. Dependências externas: Algumas bibliotecas (mock-aws-s3, aws-sdk, nock) são módulos externos que não precisam ser incluídos no bundle, mas o tsup tenta resolvê-los durante o build, causando falhas.
+2. Dependências externas: Algumas bibliotecas (`mock-aws-s3, aws-sdk`, `nock`) são módulos externos que não precisam ser incluídos no bundle, mas o `tsup` tenta resolvê-los durante o build, causando falhas.
 
 ## Solução
 
